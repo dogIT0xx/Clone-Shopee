@@ -18,12 +18,32 @@
 .header__navbar-item {
     display: block;
     position: relative;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     color: var(--white-color);
     font-weight: 400;
     line-height: 1.6rem;
     padding: 0.4rem;
     margin: 0.5rem;
+}
+
+.header__navbar-icon-link,
+.header__navbar-item-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__navbar-icon {
+    font-size: 1.6rem;
+    color: var(--white-color);
+    margin: auto 0.4rem;
+}
+
+.header__navbar-item:hover,
+.header__navbar-item-link:hover, 
+.header__navbar-icon-link:hover {
+    cursor: pointer;
+    color: var(--white-color);
+    opacity: 75%;
 }
 
 .header__navbar-item--separate:after {
@@ -38,8 +58,10 @@
    background-color: hsl(0deg 0% 100% / 22%);
 }
 
-.header__navbar-item-link {
-    text-decoration: none;
-    color: inherit;
+.header__navbar-item--no-pointer:hover {
+    cursor: text;
+    color: var(--white-color);
+    opacity: 100%;
 }
+
 
